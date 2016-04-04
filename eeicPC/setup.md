@@ -31,12 +31,12 @@ control      Control_L (0x25),  Control_L (0x42),  Control_R (0x69)
 ```
 (キーコード0x25はAの左にあるキー=CapsLock英数)
 ### 余っているキーの割り当て
- + layout要素を`jp(dvorak)`にすると、「\\|」キーや「＼_」キーが使えるようになるが、記号の配列が大きく異なる
- ++ [参考サイト](https://sites.google.com/site/tetsuroweb/home/software/ubuntu/tips/japanese-keyboard-layout)
- + `key <AB11>`が「＼_」キー、`key <AE13>`が「\\|」キーのようなのでこれらを割り当てる
+ + layout要素を`jp(dvorak)`にすると、「￥|」キーや「＼_」キーが使えるようになるが、記号の配列が大きく異なる
+	+ [参考サイト](https://sites.google.com/site/tetsuroweb/home/software/ubuntu/tips/japanese-keyboard-layout)
+ + `key <AB11>`が「＼_」キー、`key <AE13>`が「￥|」キーのようなのでこれらを割り当てる
  + [xkbでキーバインドを変更する](http://blog.cnu.jp/blog/2014/05/12/use-xkb/)と[Ubuntu：「無変換+○」にカーソル移動系ホットキーを設定する（xkb編）](http://did2memo.net/2015/07/20/ubuntu-xkb-muhenkan-hotkey/)を参考に以下のようにキーを変更
 	 + 「}]」キーを押すと【＼|】が出力されるのを、【~\`】が出力されるように変更
-	 + 追い出された【＼|】を出力する機能を「\\|」キーに変更
+	 + 追い出された【＼|】を出力する機能を「￥|」キーに変更
 	 + 「＼_」キーはとりあえず未設定
 	 + 「半全」キーはとりあえず保留(【~\`】を出力するまま)
 
