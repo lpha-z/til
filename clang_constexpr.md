@@ -9,7 +9,8 @@
 ### clang on cygwin
 - なぜかエラー```g++: エラー: unrecognized command line option ‘-fconstexpr-steps=1000000000’```
 - llvm-bitcodeにすればいいかと思ったら```lli```で実行時に```LLVM ERROR: Program used external function '__dso_handle' which could not be resolved!```のエラーが出る
-- ```clang++ -std=c++11 -fconstexpr-steps=1000000000 -c -emit-no-use-cxa-atexit```とすることで解決できた
+- ```clang++ -std=c++11 -fconstexpr-steps=1000000000 -c -emit-llvm -fno-use-cxa-atexit```とすることで解決できた
+- 普通に```-c```でオブジェクトファイルを出力してしてからリンクをしてもいける
 
 ◎50万要素のソート：10分
 ### clang with Microsoft codegen on VisualStudio2015
