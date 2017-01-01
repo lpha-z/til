@@ -1,7 +1,7 @@
 # C++のconstexprで長大なコンパイル時計算を行う方法
 
 ## clang
-### clang on ubuntu
+### clang3.4.1 on ubuntu
 - メモリを食いつぶしてしまう
 
 ◎2万要素のソートが16GBマシンでの限界くらい
